@@ -1,4 +1,4 @@
-package main
+package AVLTree
 
 import (
 	"fmt"
@@ -226,12 +226,13 @@ func inOrder(root *TreeNode) {
 	fmt.Println(root)
 	inOrder(root.right)
 }
-func main() {
-	tree := NewAVLTree(6)
-	data := []int{3, 8, 2, 5, 7, 9, 1, 4, 11, 10, 12}
-	for i := 0; i < len(data); i++ {
-		tree.Insert(data[i])
-	}
-	tree.Delete(6)
-	tree.InOrder()
-}
+
+//func main() {
+//	tree := NewAVLTree(6)
+//	data := []int{3, 8, 2, 5, 7, 9, 1, 4, 11, 10, 12}
+//	for i := 0; i < len(data); i++ {
+//		tree.Insert(data[i])
+//	}
+//	tree.Delete(6)
+//	tree.InOrder()
+//}
